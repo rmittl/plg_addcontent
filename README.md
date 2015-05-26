@@ -1,0 +1,1 @@
+Simple Plugnin for Joomla to add Content of your choice to an article in Joomla depend of of the categorie.
