@@ -1,0 +1,46 @@
+<extension type="plugin" group="content" method="upgrade">
+	<name>plg_content_addcontent</name>
+    <author>Robert Mittl</author>
+    <createDate>March 2015</createDate>
+    <copyright>Copyright (C) 2014. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later</license>
+    <authorEmail>info@mittl-medien.de</authorEmail>
+    <authorUrl>www.mittl-medien.de</authorUrl>
+    <version>0.0.1</version>
+    <description>PLG_CONTENT_ADDCONTENT_XML_DESCRIPTION</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_content_addcontent.ini</language>
+        <language tag="en-GB">en-GB.plg_content_addcontent.sys.ini</language>
+    </languages>
+    <files>
+        <filename plugin="addcontent">addcontent.php</filename>
+        <filename>index.html</filename>
+        <!--<folder>form</folder>
+        <folder>sql</folder>-->
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+
+
+                <field
+                        name="include_category"
+                        type="category"
+                        multiple='true'
+                        extension="com_content"
+                        label="PLG_CONTENT_ADDCONTENT_CATEGORY"
+                        description="PLG_CONTENT_ADDCONTENT_FIELD_CATEGORY_ID_DESC"
+                        />
+
+
+                <field name="textfield" label ="Text" type="editor" width="300" filter="safehtml" />
+
+            </fieldset>
+
+
+
+
+        </fields>
+    </config>
+</extension>
+
